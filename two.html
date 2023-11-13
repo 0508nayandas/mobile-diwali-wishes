@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diwali wishes</title>
+    <link rel="stylesheet" href="abc.css">
+</head>
+<style>
+        
+    h1 {
+        padding: 0px;
+        margin: 40px;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        line-height: 60px;
+        text-shadow: 0px 15px 5px rgba(0, 0, 0, .2);
+        animation: sec 2s infinite;
+    }
+
+    h1 span {
+        font-size: 70px;
+        animation: sec 2s infinite;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: scale(1.1) rotate(0deg);
+        }
+        100% {
+            transform: scale(1.1) rotate(360deg);
+        }
+    }
+
+    @keyframes animate {
+        0% {
+            transform: rotate(20deg);
+            box-shadow: 0 0 30px rgb(255, 255, 0);
+        }
+        25% {
+            transform: rotate(10deg);
+        }
+        50% {
+            transform: rotate(5deg);
+        }
+        75% {
+            transform: rotate(15deg);
+            box-shadow: 0 0 30px rgb(255, 255, 0);
+        }
+        100% {
+            transform: rotate(20deg);
+        }
+    }
+
+    @keyframes sec {
+        0% {
+            color: orange;
+        }
+        10% {
+            color: red;
+        }
+        20% {
+            color: rgb(212, 66, 66);
+            letter-spacing: 2px;
+        }
+        30% {
+            color: lime;
+        }
+        40% {
+            color: green;
+        }
+        50% {
+            color: blue;
+            letter-spacing: 5px;
+        }
+        60% {
+            color: magenta;
+        }
+        70% {
+            color: maroon;
+        }
+        80% {
+            color: rgb(0, 140, 255);
+            letter-spacing: 2px;
+        }
+        90% {
+            color: bisque;
+        }
+        100% {
+            color: yellow;
+            letter-spacing: 0px;
+        }
+    }
+
+</style>
+<body>
+    <div class="birthday-card">
+        <!-- Inner -->
+        <div class="cover-inner">
+            <img src="https://img.freepik.com/free-vector/indian-style-hapy-diwali-wishes-card-background-design_1017-34098.jpg" width="100%" height="100%">
+        </div>
+    
+        <!-- Outer -->
+        <div class="cover-outer">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/08377785290179.5d7797564b451.jpg" width="100%" height="100%">
+        </div>
+    
+        <!-- Text -->
+        <body>
+            <!-- Inside the div with class "container" -->
+            <div class="container">
+                <h1>Happy Diwali</h1><h5><span id="userName"></span>🪔Wishe you a Happy diwali.</h5>
+                <div class="center"><pre><b><i><h3>
+"May millions of lamps illuminate 
+     your life with 
+endless prosperity, health, and 
+    wealth forever. 
+Wishes You and Your Family a 
+    Very Happy Diwali."
+                   from∽Nayan das</h3></i></b>
+            </pre></div>
+            <script src="script.js"></script>
+            <script>
+                // Display the user's name from localStorage
+                var userName = localStorage.getItem("userName");
+                document.getElementById("userName").innerText = userName;
+            </script>
+        </div>
+        </div>
+
+    </div>
+</body>
+</html>
